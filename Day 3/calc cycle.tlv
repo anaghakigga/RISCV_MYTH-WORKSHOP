@@ -26,7 +26,7 @@
       @2   
          $out[31:0] = ($reset|!$num) ? 32'b0 : (($op[1:0]==2'b00) ? $sum :
                                        ($op[1:0]==2'b01) ? $diff :
-                                          ($op[1:0]==2'b10) ? $prod : $quot) : >>1$out[31:0];
+                                          ($op[1:0]==2'b10) ? $prod : $quot);
 
       // Macro instantiations for calculator visualization(disabled by default).
       // Uncomment to enable visualisation, and also,
