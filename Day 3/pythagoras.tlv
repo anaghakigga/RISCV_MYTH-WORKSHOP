@@ -12,7 +12,6 @@
          $valid = & $rand_valid[1:0];  // Valid with 1/4 probability
                                        // (& over two random bits).
    
-   // DUT (Design Under Test)
    |calc
       ?$valid
          // Pythagoras's Theorem
@@ -26,8 +25,7 @@
 
 
 
-            // VIZ and LOG output.
-            // Note that this can affect the logic in the DIAGRAM. You may comment this out.
+   
             m5+pythagorean_viz_and_log(1)
 \SV
    endmodule
